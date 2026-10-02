@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/Infinix-X6525B
+DEVICE_PATH := device/infinix/X6525B
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -36,7 +36,7 @@ TARGET_USES_64_BIT_BINDER := true
 OVERRIDE_TARGET_FLATTEN_APEX := true
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6525B
+TARGET_BOOTLOADER_BOARD_NAME := Infinix-X6525B,X6525B
 TARGET_NO_BOOTLOADER := true
 
 # Display
@@ -54,8 +54,8 @@ BOARD_MKBOOTIMG_ARGS += --ramdisk_offset $(BOARD_RAMDISK_OFFSET)
 BOARD_MKBOOTIMG_ARGS += --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 BOARD_KERNEL_IMAGE_NAME := Image
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-TARGET_KERNEL_CONFIG := Infinix-X6525B_defconfig
-TARGET_KERNEL_SOURCE := kernel/infinix/Infinix-X6525B
+TARGET_KERNEL_CONFIG := X6525B_defconfig
+TARGET_KERNEL_SOURCE := kernel/infinix/X6525B
 
 # Kernel - prebuilt
 TARGET_FORCE_PREBUILT_KERNEL := true
